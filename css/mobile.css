@@ -1,0 +1,229 @@
+#div_file{position:static;top:-9999px;}
+#div_url, #div_rs, #div_tt, #div_ff, #div_copy {position:absolute;top:-9999px;}
+#progress_div {position:absolute;top:-9999px;}
+.upload_block input[type="file"], #files_container input[type="file"] { width: 95%; opacity: 0; height: 40px; position: relative; top: -45px; }
+.fileinput-button span, .fileinput-button input[type="button"] { z-index: 0; }
+html, body {
+    height : 100%;
+}
+.navicon {
+    background-image: url(/images/navicon.png);
+    background-repeat: no-repeat;
+    border-radius: 9px;
+    background-position:center;
+}
+#file_setting a {
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.tabcontent .uploadfile .browsebtn,
+.tabcontent .flashupload .browsebtn{
+}
+.tabcontent .uploadbtn{
+	margin: 20px;
+}
+
+/******************* Start upload button *******************/
+
+.uploadbtn{
+	position: relative;
+	cursor: pointer;
+	transition:all 0.3s ease;
+	width: 200px;
+	height: 65px;
+	color: #fff;
+	background: #0a9dd2;
+	box-shadow: inset 0 0 60px #1d6c88;
+	-webkit-box-shadow: inset 0 0 60px #1d6c88;
+	-moz-box-shadow: inset 0 0 60px #1d6c88;
+	font-size: 19px;
+	font-weight: bold;
+	border: 0;
+}
+.uploadbtn .bicon{
+	float: left;
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	box-shadow: inset 0 0 50px #1d6c88;
+	-webkit-box-shadow: inset 0 0 50px #1d6c88;
+	-moz-box-shadow: inset 0 0 50px #1d6c88;
+	background: #0a9dd2;
+}
+.uploadbtn .btext{
+	line-height: 65px;
+	float: left;
+	width: 135px;
+	height: 65px;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 65px;
+}
+.uploadbtn .barrow {
+    position: absolute;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear; /** Chrome & Safari **/
+    -moz-transition: all .2s linear; /** Firefox **/
+    -o-transition: all .2s linear; /** Opera **/
+}
+.uploadbtn .van {
+    top: 20px;
+    left: 26px;
+}
+.uploadbtn .vanb {
+	position: absolute;
+    top: 30px;
+	left: 20px;
+}
+.uploadbtn:hover{
+	transition:all 0.5s linear;
+	background: #17b6f0;
+	box-shadow: inset 0 0 60px #1d6c88;
+	-webkit-box-shadow: inset 0 0 60px #1d6c88;
+	-moz-box-shadow: inset 0 0 60px #1d6c88;
+}
+.uploadbtn:hover .move-top{
+    transform: translate(0,-10px);
+    -webkit-transform: translate(0,-10px); /** Chrome & Safari **/
+    -o-transform: translate(0,-10px); /** Opera **/
+    -moz-transform: translate(0px,-10px); /** Firefox **/
+	opacity: .2;
+}
+.uploadbtn:hover .bicon{
+	background: #17b6f0;
+	transition:all 0.5s linear;
+}
+
+/******************* end upload button *******************/
+
+/******************* Start browse button *******************/
+.browsebtn input[type="file"]{
+	width: 200px;
+	height: 65px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10000;
+	cursor: pointer;
+	}
+.browsebtn{
+	position: relative;
+
+	transition:all 0.3s ease;
+	width: 200px;
+	height: 65px;
+	color: #fff;
+	background: #0a9dd2;
+	box-shadow: inset 0 0 60px #1d6c88;
+	-webkit-box-shadow: inset 0 0 60px #1d6c88;
+	-moz-box-shadow: inset 0 0 60px #1d6c88;
+	font-size: 19px;
+	font-weight: bold;
+	border: 0px;
+
+	margin: 50px auto;
+}
+
+.ui-body-d, .ui-overlay-d { text-shadow:0 0 0; !important }
+.browsebtn .bicon{
+	float: left;
+	background: #000;
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	box-shadow: inset 0 0 50px #1d6c88;
+	-webkit-box-shadow: inset 0 0 50px #1d6c88;
+	-moz-box-shadow: inset 0 0 50px #1d6c88;
+	background: #0a9dd2;
+}
+.browsebtn .btext{
+	line-height: 65px;
+	float: left;
+	width: 135px;
+	height: 65px;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 65px;
+    border: 0px;
+}
+.browsebtn .bfolder {
+    position: absolute;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear; /** Chrome & Safari **/
+    -moz-transition: all .2s linear; /** Firefox **/
+    -o-transition: all .2s linear; /** Opera **/
+}
+.browsebtn .van {
+	display: block;
+	width: 27px;
+	height: 15px;
+	background: #fff;
+	
+    top: 30px;
+    left: 20px;
+}
+.browsebtn .vanb {
+	position: absolute;
+    top: 22px;
+	left: 20px;
+}
+.browsebtn:hover{
+	transition:all 0.5s linear;
+	background: #17b6f0;
+	box-shadow: inset 0 0 60px #1d6c88;
+	-webkit-box-shadow: inset 0 0 60px #1d6c88;
+	-moz-box-shadow: inset 0 0 60px #1d6c88;
+}
+.browsebtn:hover .move{
+    transform: perspective(30px) rotateX(-40deg);
+    -webkit-transform: perspective(30px) rotateX(-40deg); /** Chrome & Safari **/
+    -o-transform: perspective(30px) rotateX(-40deg); /** Opera **/
+    -moz-transform: perspective(30px) rotateX(-40deg); /** Firefox **/
+
+}
+.browsebtn:hover .bicon{
+	background: #17b6f0;
+	transition:all 0.5s linear;
+}
+.uploadfile {
+	text-align: center;
+}
+/******************* end browse button *******************/
+a { text-decoration: none; }
+.blues{
+	background: #83b9db; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #83b9db 0%, #3c8cbf 100%) ; /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#83b9db), color-stop(100%,#3c8cbf)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #83b9db 0%,#3c8cbf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #83b9db 0%,#3c8cbf 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #83b9db 0%,#3c8cbf 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #83b9db 0%,#3c8cbf 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83b9db', endColorstr='#3c8cbf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.ui-bar-a {
+	background: #373737;
+}
+
+.progressbar-outer {
+	margin: auto;
+}
+
+.progress_div {
+	text-align: center;
+}

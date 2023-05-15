@@ -1,0 +1,33 @@
+.active td { font-weight: bold }
+.holderPanel{width: 100%; background:#fff; float:left;}
+.SidemenuPanel{width: 16.66%; background:#444; float:left; display:block;height:100%; padding-bottom:15px;
+-bracket-:hack[;height:auto;];
+/* -webkit-height:auto;*/}
+.contentPanel{width: 83.33%; background:#fff; float:left;}
+.contentPanel{height:auto;}
+@media (min-height: 800px){
+.contentPanel{height:100%;}
+}
+footer{display:none;}
+#header #logo{display:none;}
+.SidemenuPanel #logo{display:block;}
+.UserHead{display:block;}
+#container{width:95%;margin: 20px auto;}
+@media (min-width: 320px) and (max-width: 480px) {
+.holderPanel{width: 100%;}
+.SidemenuPanel{ display:none;}
+.contentPanel{width: 100%;}
+#header #logo{display:block;}
+.UserHead{display:none;}
+}
+@media (min-width: 600px) and (max-width: 800px) {
+.holderPanel{width: 100%;}
+.SidemenuPanel{ display:none;}
+.contentPanel{width: 100%;}
+#header #logo{display:block;}
+.UserHead{display:none;}
+}
+@media (min-width: 980px) and (max-width: 1024px) {
+.SidemenuPanel{width: 25%;}
+.contentPanel{width: 75%;}
+}
