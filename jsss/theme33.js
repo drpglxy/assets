@@ -50,7 +50,7 @@ $('body').attr('class', 'dark');
 },
 });
 
-setStyleSheet('https://cdn.jsdelivr.net/gh/dgowner/assets/styles/dark'+coloriddiv+'.min.css');
+setStyleSheet('https://assets-7pb.pages.dev/styles/dark'+coloriddiv+'.min.css');
 } else {
 $.ajax({
 type: 'GET',
@@ -59,7 +59,7 @@ success: function() {
 $('body').attr('class', 'white');
 },
 });
-setStyleSheet('https://cdn.jsdelivr.net/gh/dgowner/assets/styles/white'+coloriddiv+'.min.css');
+setStyleSheet('https://assets-7pb.pages.dev/styles/white'+coloriddiv+'.min.css');
 }
 });
 });
@@ -104,11 +104,11 @@ $('body').attr('class', 'white');
 },
 });
 
-$("#logoo").attr("src", "https://cdn.jsdelivr.net/gh/dgowner/assets/img/logoo"+colorlogo+".png");
-$("#favicon").attr("href","https://cdn.jsdelivr.net/gh/dgowner/assets/img/favicon"+colorlogo+".png");
+$("#logoo").attr("src", "https://assets-7pb.pages.dev/img/logoo"+colorlogo+".png");
+$("#favicon").attr("href","https://assets-7pb.pages.dev/img/favicon"+colorlogo+".png");
 colors(color_id);
 $('#coloriddiv').html(colorlogo);
-setStyleSheet('https://cdn.jsdelivr.net/gh/dgowner/assets/styles/white'+colorlogo+'.min.css');
+setStyleSheet('https://assets-7pb.pages.dev/styles/white'+colorlogo+'.min.css');
 } else {
 $.ajax({
 type: 'GET',
@@ -117,11 +117,11 @@ success: function() {
 $('body').attr('class', 'dark');
 },
 });
-$("#logoo").attr("src", "https://cdn.jsdelivr.net/gh/dgowner/assets/img/logoo"+colorlogo+".png");
-$("#favicon").attr("href","https://cdn.jsdelivr.net/gh/dgowner/assets/img/favicon"+colorlogo+".png");
+$("#logoo").attr("src", "https://assets-7pb.pages.dev/img/logoo"+colorlogo+".png");
+$("#favicon").attr("href","https://assets-7pb.pages.dev/img/favicon"+colorlogo+".png");
 colors(color_id);
 $('#coloriddiv').html(colorlogo);
-setStyleSheet('https://cdn.jsdelivr.net/gh/dgowner/assets/styles/dark'+colorlogo+'.min.css');
+setStyleSheet('https://assets-7pb.pages.dev/styles/dark'+colorlogo+'.min.css');
 }
 
 }
